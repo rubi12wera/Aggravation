@@ -4,9 +4,7 @@ RollDice = function () {
 	if (this.rollDice === 6) {
 		alert("you get a free turn! yay! \n Roll dice again!");
 	}
-
+	return this.rollDice;
 };
 
 module.exports = RollDice;
-
-

@@ -60,15 +60,10 @@ footer {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+/*.jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
+}*/
 
 /* Supporting marketing content */
 .marketing {
@@ -98,8 +93,31 @@ footer {
   .jumbotron {
     border-bottom: 0;
   }
+  .btn-lg{
+    background-color: red;
+    color: white;
+
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+#placeholder {
+  height: 100px;
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+.number{
+    text-align: center;
+    position: relative;
 }
 
+
+}
 
 
 /* Space out content a bit */
@@ -121,7 +139,7 @@ Board Structure
     width: 500px;
 }
 .row{
-    background: pink;  
+    background: #EBEBE0;  
     float: left;
 
 }
@@ -146,7 +164,7 @@ Board Structure
 Board positions - Box
 ********************************/
 .box {
-    background: yellow;
+    background: #F5F5DA;
     border: 1px solid #000;
     border-radius: 100%;
     float: left;

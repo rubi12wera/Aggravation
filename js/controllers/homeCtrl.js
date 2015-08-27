@@ -1,4 +1,4 @@
-var app = angular.module("aggravationApp");
+/*var app = angular.module("aggravationApp");*/
 
 app.controller('homeCtrl', function($scope) {
 
@@ -18,7 +18,5 @@ app.controller('homeCtrl', function($scope) {
         }
     ];
     
-
-			
 
 });

@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			 '': { templateUrl: '../views/partial-home.html' },
 			 'columnThree@home':{
 				templateUrl:'../views/diceTmpl.html',
-				controller:'homeCtrl'},
+				controller:'diceCtrl'},
 
 			'columnOne@home':{
 				templateUrl:'../views/homeTmpl.html',

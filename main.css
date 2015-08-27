@@ -1,0 +1,174 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+footer {
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+footer {
+    margin-top: 20px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 0;
+  
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+
+}
+.colPartHom{
+    float: left;
+    margin-left: 20px;
+  
+
+}
+
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+#uppercase{
+  text-transform: capitalize;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+/* Space out content a bit */
+
+/*******************************
+Elements
+********************************/
+span{
+    display: block;
+    font: bold 10px "Arial", "Helvetica", sans-serif;
+    color: #000;
+    text-align: center;
+}
+/*******************************
+Board Structure
+********************************/
+.board {
+    background: #EBEBE0;
+    width: 500px;
+}
+.row{
+    background: pink;  
+    float: left;
+
+}
+#row1, #row3 {
+    height: 52px;
+    width: 488px;
+}
+#row2 {
+    width: 488px;
+
+}
+.col1{
+    float: left;
+    width: 45px;
+}
+.col3{
+    float: right;
+    margin-right: 2px;
+    width: 45px;
+}
+/*******************************
+Board positions - Box
+********************************/
+.box {
+    background: yellow;
+    border: 1px solid #000;
+    border-radius: 100%;
+    float: left;
+    height: 50px;
+    width: 47px;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+div .box-x:last-child {
+    margin-right: 0;
+}
+.box-x{
+    margin-right: 2px;
+}
+.box-y{
+    margin-bottom: 2px;
+}
+div .box-y:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+

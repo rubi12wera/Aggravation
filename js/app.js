@@ -20,7 +20,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			'columnTwo@home': {
 
 				templateUrl:'./views/data.html',
-				controller: 'homeCtrl'
+				controller: 'scoresCtrl'
 			}
 
 		}

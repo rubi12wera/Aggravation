@@ -9,3 +9,17 @@
 <td>{{scotch.price}}</td>
 </tr>
 </table>
+
+<h2>Scores</h2>
+<table class="table table-striped table-bordered">
+<tr>
+<th>Name</th>
+<th>Home</th>
+<th>Wins</th>
+</tr>
+<tr ng-repeat="score in scores">
+<td>{{score.team}}</td>
+<td>{{score.score}}</td>
+<td>{{score.wins}}</td>
+</tr>
+</table>

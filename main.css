@@ -42,23 +42,49 @@ footer {
 
 }
 .colPartHom{
-    float: left;
-    margin-left: 20px;
-  
 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+.colScores{
+  width: 20%;
+  margin-left: 40px;
+}
+.colDice{
+  width: 20%;
+  position: relative;
 }
 
 
 /* Customize container */
 @media (min-width: 768px) {
   .container {
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
 
   }
+ img{
+    height: 100px;
+    width: 100px;
+  }
+
+
 }
 .container-narrow > hr {
   margin: 30px 0;
 }
-
+.button{
+    margin-left: 25%;
+    vertical-align: middle;
+    width: 400px;
+    height: 50%;
+    margin-top: 10px;
+}
 /* Main marketing message and sign up button */
 /*.jumbotron {
   text-align: center;
@@ -102,6 +128,22 @@ footer {
     height: 100px;
     width: 100px;
   }
+
+.number{
+    text-align: center;
+    position: relative;
+}
+}
+
+@media(max-width: 800px){
+  .colPartHom{
+  float: none !important;
+  display: inline;
+}
+  .container{
+margin-left: 25%;
+  }
+}
 #placeholder {
   height: 100px;
   width: 100px;
@@ -109,16 +151,12 @@ footer {
   border-radius: 10px;  
   font-size:80px;
   margin-top: 20px;
-  margin-left: 25%;
+/*  margin-left: 25%;*/
+ 
 }
-.number{
-    text-align: center;
-    position: relative;
+.img-responsive{
+    max-width: 100px;
 }
-
-
-}
-
 
 /* Space out content a bit */
 
@@ -126,7 +164,7 @@ footer {
 Elements
 ********************************/
 span{
-    display: block;
+    
     font: bold 10px "Arial", "Helvetica", sans-serif;
     color: #000;
     text-align: center;
@@ -137,9 +175,10 @@ Board Structure
 .board {
     background: #EBEBE0;
     width: 500px;
+
 }
 .row{
-    background: #EBEBE0;  
+    background: #BAA378;  
     float: left;
 
 }
@@ -164,8 +203,8 @@ Board Structure
 Board positions - Box
 ********************************/
 .box {
-    background: #F5F5DA;
-    border: 1px solid #000;
+    background: #EFE0B9;
+    border: 3px solid #F5ECD5;
     border-radius: 100%;
     float: left;
     height: 50px;
@@ -185,8 +224,28 @@ div .box-x:last-child {
 div .box-y:last-child {
     margin-bottom: 0;
 }
+.marble{
+  font-size: 34px;
+ float: left;
+ cursor: pointer;
+}
 
+.red{
+border-color: red;
+}
+.blue{
+border-color: blue;
+}
+.black{
+border-color: black;
+}
+.yellow{
+border-color: yellow;
+}
 
-
+.home{
+float: right;
+  background-color: #242421;
+}
 
 

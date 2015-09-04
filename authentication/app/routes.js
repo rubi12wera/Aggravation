@@ -1,5 +1,6 @@
 module.exports = function(app, passport) {
 
+
     // =====================================
     // HOME PAGE (with login links) ========
     // =====================================
@@ -48,6 +49,7 @@ module.exports = function(app, passport) {
         passport.authenticate('facebook', {
             successRedirect : '/aggravation',
             failureRedirect : '/loginhome'
+        /*    failureRedirect : '/aggravation'*/
         }));
 
     // =====================================

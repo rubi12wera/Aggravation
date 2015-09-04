@@ -2,16 +2,16 @@
 module.exports = {
 
     'facebookAuth' : {
-        'clientID'      : '446053848918172', // your App ID
-        'clientSecret'  : '8fc61f65d8809c2c4d8224e535e3d1df', // your App Secret
-        'callbackURL'   : 'http://localhost:8080/auth/facebook/callback'
+        'clientID'      : '1492866947691494', // your App ID
+        'clientSecret'  : '5235cad68bb4ddfbee0d4b75538b63d5', // your App Secret
+        'callbackURL'   : 'http://localhost:3000/auth/facebook/callback'
     },
 
 
     'googleAuth' : {
         'clientID'      : 'your-secret-clientID-here',
         'clientSecret'  : 'your-client-secret-here',
-        'callbackURL'   : 'http://localhost:8080/auth/google/callback'
+        'callbackURL'   : 'http://localhost:3000/auth/google/callback'
     }
 
 };

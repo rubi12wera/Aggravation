@@ -1,0 +1,35 @@
+<div class="container">
+
+<!-- when a chance we can use htm unicode to show dice sides based on the rolldice() result 
+http://jsfiddle.net/estelle/6d5Z6/light/
+INSTEAD OF placeholder or with it -->
+
+	<img src="https://openclipart.org/image/800px/svg_to_png/189685/1387954956.png" class="img-responsive">
+</div>
+<div class="button">
+	<button class = "btn btn-lg bt-success" ng-click="RollDice()">Roll Dice</button>
+
+	<div id="placeholder">
+		<p class="number"ng-show="rollDice">{{rollDice}}</p>
+	</div>
+</div>
+<div class="chat">
+		<h3>Chat with your Friends!</h3></div>
+	<div>
+		<form>
+			<fieldset>
+				<input type='text' placeholder='username' ng-model='username'>
+				<textarea placeholder='Type...' ng-model='newChatText'></textarea>
+				<button ng-click='sendChat(username, newChatText)'>Send</button>
+			</fieldset>
+		</form>
+	</div>
+	<div>
+		
+		<ul>
+			<li ng-repeat='chat in chats'>
+				<strong>{{ chat.username }}:</strong>
+				<span>{{ chat.text }}</span>
+			</li>
+		</ul>
+	</div>

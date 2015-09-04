@@ -2,12 +2,13 @@
 body {
 /*  padding-top: 20px;
   padding-bottom: 20px;*/
-  background-image: url(http://www.csszengarden.com/167/bg.gif);
+/*  background-image: url(http://www.csszengarden.com/167/bg.gif);
   background-position:50% 0px;
   background-size: initial;
   background-repeat-x: no-repeat;
-  background-repeat-y: repeat;
-  background-color: #6b320e; 
+  background-repeat-y: repeat;*/
+  background-color: #F5ECD5; 
+ 
 }
 
 
@@ -19,9 +20,12 @@ footer {
   padding-left: 15px;
 
 }
+
+
 .colums{
   float: right;
 }
+
 
 /* Custom page header */
 .header {
@@ -69,10 +73,11 @@ margin-left: 5%;
  /* margin-left: 40px;*/
 }
 tr{
-  background-color: white;
+  color: #876109;
 }
+
 h2{
-  color: white;
+  color: #876109;
 }
 .colDice{
   width: 28%;
@@ -140,11 +145,13 @@ h2{
 #placeholder {
   height: 100px;
   width: 100px;
-  border: 1px solid gray;
+ border: 1px solid #B1B56E;
+
   border-radius: 10px;  
   font-size:80px;
   margin-top: 20px;
-background-color: white;
+   color: #876109;
+/*background-color: white;*/
  
 }
 }
@@ -158,14 +165,15 @@ background-color: white;
   width: inherit;
 }
 #placeholder {
-  height: 100px;
-  width: 100px;
-  border: 1px solid gray;
+  height: 90px;
+  width: 90px;
+  border: 1px solid #B1B56E;
+  background-color: #B1B56E;
   border-radius: 10px;  
   font-size:80px;
   margin-top: 20px;
 text-align: center;
-background-color: white;
+ color: #876109;
  
 }
 .colums{
@@ -179,8 +187,9 @@ background-color: white;
 
 }
   .btn-lg{
-    background-color: red;
-    color: white;
+    background-color: #B1B56E;
+    color: #876109;
+ 
 
   }
 
@@ -203,12 +212,12 @@ span{
 Board Structure
 ********************************/
 .board {
-    background: #EBEBE0;
+    background: #EFE0B9;
     width: 500px;
 
 }
 .row{
-    background: #BAA378;  
+    background: #EFE0B9;  
     float: left;
 
 }
@@ -233,7 +242,7 @@ Board Structure
 Board positions - Box
 ********************************/
 .box {
-    background: #EFE0B9;
+    background: #F5ECD5;
     border: 3px solid #F5ECD5;
     border-radius: 100%;
     float: left;
@@ -260,22 +269,19 @@ div .box-y:last-child {
  cursor: pointer;
 }
 
-.red{
-border-color: red;
+
+.start{
+/*background-color: #E1EDCC;*/
+background-color: #B1B56E;
+
 }
-.blue{
-border-color: blue;
-}
-.black{
-border-color: black;
-}
-.yellow{
-border-color: yellow;
+.end{
+  background-color: #D6B874;
 }
 
 .home{
 float: right;
-  background-color: #242421;
+  background-color: #4A4132;
 }
 
 

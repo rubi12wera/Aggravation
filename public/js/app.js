@@ -1,4 +1,4 @@
-var app = angular.module('aggravationApp', ['ui.router']);
+var app = angular.module('aggravationApp', ['ui.router', 'firebase']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/home');
@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			 '': { templateUrl: '../views/partial-home.html' },
 			 'columnThree@home':{
 				templateUrl:'../views/diceTmpl.html',
-				controller:'diceCtrl'},
+				controller:'diceChatCtrl'},
 
 			'columnOne@home':{
 				templateUrl:'../views/homeTmpl.html',

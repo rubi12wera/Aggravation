@@ -8,18 +8,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url:'/home',
 		views: {
 
-			 '': { templateUrl: 'views/partial-home.html' },
+			 '': { templateUrl: 'viewsHtml/partial-home.html' },
 			 'columnThree@home':{
-				templateUrl:'views/diceTmpl.html',
+				templateUrl:'viewsHtml/diceTmpl.html',
 				controller:'diceChatCtrl'},
 
 			'columnOne@home':{
-				templateUrl:'views/homeTmpl.html',
+				templateUrl:'viewsHtml/homeTmpl.html',
 				controller:'homeCtrl'
 			},
 			'columnTwo@home': {
 
-				templateUrl:'views/data.html',
+				templateUrl:'viewsHtml/data.html',
 				controller: 'scoresCtrl'
 			}
 

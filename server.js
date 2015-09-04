@@ -32,7 +32,7 @@ app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
 
 app.set('view engine', 'ejs'); // set up ejs for templating
-app.use(express.static("/public")) // call for web files
+app.use(express.static(__dirname + "./public")) // call for web files
 
 // required for passport
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
@@ -43,6 +43,7 @@ app.engine('.html', require('jade').renderFile);
 
 // routes ======================================================================
 require('./authentication/app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+
 
 
 

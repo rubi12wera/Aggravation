@@ -1,9 +1,9 @@
 var ScoreService = app.service("ScoreService",["$rootScope",function($rootScope){
 	this.scores = [
-		{team:"Sam", score: 0, wins: 0},
-		{team:"Dee", score: 0, wins: 0},
 		{team:"Blue", score: 0, wins: 0},
-		{team:"Seven", score: 0, wins: 0}
+		{team:"Da", score: 0, wins: 0},
+		{team:"Ba", score: 0, wins: 0},
+		{team:"Dee", score: 0, wins: 0}
 	];
 
 	this.incrementScore = function (team) {

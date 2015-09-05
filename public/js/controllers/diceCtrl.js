@@ -2,7 +2,7 @@
 
 /**/
 
-app.controller('diceChatCtrl', function($scope, $firebaseArray, $firebaseObject) {
+app.controller('diceChatCtrl', function($scope/*, $firebaseArray, $firebaseObject*/) {
 
 	$scope.RollDice = function () {
 		this.rollDice = Math.floor(Math.random() * 6) + 1;
@@ -14,7 +14,7 @@ app.controller('diceChatCtrl', function($scope, $firebaseArray, $firebaseObject)
 	
 	};
 
-	var firebaseRoot = 'https://adrianaexample.firebaseio.com/firebaseChatAggravation';
+	/*var firebaseRoot = 'https://adrianaexample.firebaseio.com/firebaseChatAggravation';
 				var ref = new Firebase(firebaseRoot + '\chats');
 				var chats = $firebaseArray(ref);
 
@@ -26,5 +26,8 @@ app.controller('diceChatCtrl', function($scope, $firebaseArray, $firebaseObject)
 						text: newChatText
 					});
 				};
+				$scope.removeMesg = function(){
+					chats(key).remove();
+				}*/
 
 });

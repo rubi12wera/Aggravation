@@ -10,7 +10,11 @@ body {
   background-color: #F5ECD5; 
  
 }
-
+        .contentChat { padding:5px; background:white; border-radius:5px; overflow-y: scroll;
+                   border:1px solid #CCC; margin-top:10px; height: 160px; }
+        #input { border-radius:2px; border:1px solid #ccc;
+                 margin-top:10px; padding:5px; width:300px;  }
+        #status { width:88px; display:block; float:left; margin-top:15px; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -20,6 +24,7 @@ footer {
   padding-left: 15px;
 
 }
+
 
 
 .colums{

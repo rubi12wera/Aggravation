@@ -1,4 +1,4 @@
-var app = angular.module('aggravationApp', ['ui.router', 'firebase']);
+var app = angular.module('aggravationApp', ['ui.router',/* 'firebase'*/]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/home');

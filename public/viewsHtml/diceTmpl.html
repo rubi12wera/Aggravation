@@ -13,23 +13,34 @@ INSTEAD OF placeholder or with it -->
 		<p class="number"ng-show="rollDice">{{rollDice}}</p>
 	</div>
 </div>
-<div class="chat">
-		<h3>Chat with your Friends!</h3></div>
+<websocket >
+	<div id="content" class="contentChat"></div>
+    <div>
+        <span id="status">Connecting...</span>
+        <input type="text" id="input" disabled="disabled" />
+	</div>
+</websocket>
+<!-- <h3>Chat with your Friends!</h3>
+	<div class="chat">
+		
+			
+			<p ng-repeat='chat in chats'>
+			
+				<strong ng-model="chatuser">{{ chat.username }}:</strong>
+				<span ng-model ="chatmessage">{{ chat.text }}</span>
+
+			</p>
+		
+		
+	</div>
+
 	<div>
 		<form>
 			<fieldset>
-				<input type='text' placeholder='username' ng-model='username'>
+				<input type='text' placeholder='username' ng-model='username'><br>
 				<textarea placeholder='Type...' ng-model='newChatText'></textarea>
-				<button ng-click='sendChat(username, newChatText)'>Send</button>
+				<button ng-click='sendChat(username, newChatText)' class="btn">Send</button>
 			</fieldset>
 		</form>
-	</div>
-	<div>
-		
-		<ul>
-			<li ng-repeat='chat in chats'>
-				<strong>{{ chat.username }}:</strong>
-				<span>{{ chat.text }}</span>
-			</li>
-		</ul>
-	</div>
+	</div> -->
+

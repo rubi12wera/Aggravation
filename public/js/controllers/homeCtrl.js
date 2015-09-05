@@ -19,7 +19,7 @@ app.controller('homeCtrl', ["$scope","ScoreService", function($scope,$ScoreServi
 
         if (a === true){
             // if ( $(event.target).hasClass("black"); )
-            $ScoreService.incrementScore("black");
+            $ScoreService.incrementScore("Blue");
         }
 
       }

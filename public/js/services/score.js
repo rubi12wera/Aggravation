@@ -14,6 +14,7 @@ var ScoreService = app.service("ScoreService",["$rootScope",function($rootScope)
 			if (this.scores[i].team === team) {
 				this.scores[i].score++;
 				teamScore = this.scores[i].score;
+			
 				if(teamScore === 4){
 					this.scores[i].wins++;
 					teamWins = this.scores[i].wins;

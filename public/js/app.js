@@ -1,4 +1,4 @@
-var app = angular.module('aggravationApp', ['ui.router'/* 'firebase'*/]);
+var app = angular.module('aggravationApp', ['ui.router', 'ui.bootstrap'/* 'firebase'*/]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
@@ -25,6 +25,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 		}
 		
-	})
+	});
+/*	.state("profile",{
+		
+	})*/
 	
 })

@@ -12,29 +12,37 @@
 	<title>Aggravation</title>
 </head>
 <body >
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="#">Aggravation Game</a>
-    </div>
-    <ul class="nav navbar-nav">
-    
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="profile">Profile</a></li>
-        <li><a href="/logout">Logout</a></li>
-    </ul>
+<div class="container">
+	<nav class="navbar navbar-inverse" role="navigation">
+	    <div class="navbar-header">
+		    <button ng-init="navCollapsed =true" ng-click="navCollapsed =!navCollapsed" type="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target="#mainMenu">
+		    	<span class="icon-bar"></span>
+		    	<span class="icon-bar"></span>
+		    	<span class="icon-bar"></span>
+		    </button>
 
-</nav>
+	        <a class="navbar-brand" ui-sref="#">Aggravation Game</a>
+	    </div>
+	    <div collapse= "navCollapsed" id="mainMenu" class="navbar-collapse collapse">
+		    <ul class="nav navbar-nav">
+		        <li><a ui-sref="home">Home</a></li>
+		        <li><a ui-sref="profile">Profile</a></li>
+		        <li><a href="/logout">Logout</a></li>
+		    </ul>
+	    </div>
+
+	</nav>
 
 
-	<div  ui-view>
-			
+		<div  ui-view>
+				
 
+		</div>
+
+
+	<div>
+		
 	</div>
-
-
-<div>
-	
-</div>
 <!-- <footer>
 	<p>
 			<a href="https://github.com/rubi12wera">My GitHub</a>
@@ -42,7 +50,7 @@
 	</p>
 </footer>
  -->	
-
+</div>
 	
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
@@ -60,6 +68,9 @@
 <!-- Angular ui-routing -->
 
  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.js"></script>
+
+<!-- UI-bootstrap for nav bar to be responsive button -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap.min.js"></script>
 
 <!-- JS files -->
 	<script src="./js/app.js"></script>

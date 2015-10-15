@@ -39,13 +39,14 @@ require('./authentication/config/passport')(passport); // pass passport for conf
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
-app.use(bodyParser()); // get information from html forms
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true})); // get information from html forms
 
 app.set('view engine', 'ejs'); // set up ejs for templating
 app.use(express.static(__dirname + "/public")) ;// call for web files
 
 // required for passport
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(session({ secret: 'ilovescotchscotchyscotchscotch', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
@@ -81,12 +82,12 @@ var server = http.createServer(function(request, response) {
 });
 
 server.listen(8080, function() {
-    console.log((new Date()) + ' Server is listening on port 8080');
+    console.log((new Date()) + ' Server is listening on port 8080 BUT GO  TO LOCAL HOST 3000');
 });
 
 // launch ======================================================================
 app.listen(port);
-console.log('The magic happens on port ' + port);
+console.log('The magic application happens on port ' + port);
 
 
 
@@ -107,7 +108,7 @@ wsServer.on('request', function(request) {
     // accept connection - you should check 'request.origin' to make sure that
     // client is connecting from your website
     // (http://en.wikipedia.org/wiki/Same_origin_policy)
-    var connection = request.accept(null, request.origin); 
+    var connection = request.accept(null, request.origin);
     // we need to know client index to remove them on 'close' event
     var index = clients.push(connection) - 1;
     var userName = false;
@@ -135,7 +136,7 @@ wsServer.on('request', function(request) {
             } else { // log and broadcast the message
                 console.log((new Date()) + ' Received Message from '
                             + userName + ': ' + message.utf8Data);
-                
+
                 // we want to keep history of all sent messages
                 var obj = {
                     time: (new Date()).getTime(),
